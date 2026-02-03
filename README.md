@@ -1,19 +1,134 @@
-Output:
+# Job Scraper LLM Project 🚀
 
-(.venv) PS E:\Great Learning\LLMOps Coursera Notes\JOB_Scraper_LLM_Project> python main.py
-Total jobs found: 12
+## Overview
+The **Job Scraper LLM Project** is an AI-powered application that scrapes job listings from online sources and uses **Large Language Models (LLMs)** to analyze, structure, and match job descriptions with candidate skills.
 
-Job: Account Executive, Airbnb for Business
-URL: https://careers.airbnb.com/positions/7434393/
+This project demonstrates **LLM integration, modular Python architecture, and real-world automation use cases**.
 
----- RAW JD (first 800 chars) ----
+---
 
-Account Executive, Airbnb for Business
-Airbnb was born in 2007 when two hosts welcomed three guests to their San Francisco home, and has since grown to over 5 million hosts who have welcomed over 2 billion guest arrivals in almost every country across the globe. Every day, hosts offer unique stays and experiences that make it possible for guests to connect with communities in a more authentic way.
-We use automated tools to help our recruiting team efficiently screen a large volume of applications. All final hiring decisions are made by a human reviewer.
-Business travel is making a strong comeback, and current industry trends are playing to Airbnb’s strengths. Stays are getting longer, alternative accommodations are gaining market share, and travelers are increasingly self-sufficient.
-Airbn
+## Key Features
+- Automated Job Data Fetching
+- Job Description Parsing & Cleaning
+- LLM-Based Structuring of Job Data
+- Skill & Experience Extraction
+- Job Matching Logic
+- Modular & Scalable Code Design
 
----- STRUCTURED OUTPUT ----
+---
 
-{'role': 'Account Executive', 'seniority': 'Unknown', 'experience_years': '5+ years', 'skills': ['SaaS sales', 'Travel lodging products', 'Corporate booking solutions', 'Sales', 'Negotiation', 'Communication', 'Data analysis'], 'job_type': 'Full-time', 'domain': 'B2B Sales'}
+## Tech Stack
+- **Python**
+- **LLM APIs** (OpenAI / Gemini / HuggingFace)
+- **BeautifulSoup / Requests**
+- **Pandas**
+- **Environment Variables (.env)**
+- **REST APIs**
+
+---
+
+## Project Architecture
+
+```
+JOB_SCRAPER_LLM_PROJECT/
+│
+├── config/                 # Configuration files
+│
+├── llm/                    # LLM related processing
+│   ├── jd_structurer.py    # Structures raw job description using LLM
+│   ├── matcher.py          # Matches skills / job roles
+│
+├── scraper/                # Scraping & parsing logic
+│   ├── fetcher.py          # Fetches job data from websites
+│   ├── parser.py           # Cleans & processes HTML/text
+│   ├── jd_parser.py        # Job description specific parsing
+│
+├── storage/                # Data storage / output handling
+│
+├── utils/                  # Helper / utility functions
+│
+├── main.py                 # Entry point of the application
+├── requirements.txt        # Dependencies
+└── README.md
+```
+
+---
+
+## How to Run
+
+### 1. Clone Repository
+```
+git clone https://github.com/RutikP/job-scraper-llm.git
+cd job-scraper-llm
+```
+
+### 2. Create Virtual Environment (Optional but Recommended)
+```
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+```
+pip install -r requirements.txt
+```
+
+### 4. Add API Key
+Create a `.env` file in the root folder:
+
+```
+API_KEY=your_api_key_here
+```
+
+---
+
+### 5. Run Application
+```
+python main.py
+```
+
+---
+
+## Example Output
+- Extracted Skills: Python, SQL, Machine Learning  
+- Experience Level: 3–5 Years  
+- LLM Summary: Concise job description summary  
+- Match Score: Candidate vs Job relevance %
+
+---
+
+## Use Cases
+- Automated Job Search Assistance  
+- Resume Skill Gap Analysis  
+- Job Market Research  
+- Candidate–Job Matching Systems  
+
+---
+
+## Future Improvements
+- Streamlit / Flask UI  
+- Database Integration  
+- Multi-Platform Scraping  
+- Semantic Embedding Search  
+- Notification System  
+
+---
+
+## Best Practices Followed
+- Modular Architecture  
+- Environment Variable Security  
+- Clean Code & Separation of Concerns  
+- Dependency Management  
+- Scalable Folder Structure  
+
+---
+
+## Author
+**Rutik Panchal**  
+Applied Machine Learning Enthusiast  
+Focused on building real-world AI & LLM systems.
+
+---
+
+## License
+This project is for educational and demonstration purposes.
