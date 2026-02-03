@@ -1,4 +1,4 @@
-# Job Scraper LLM Project 🚀
+# Job Scraper LLM Project 
 
 ## Overview
 The **Job Scraper LLM Project** is an AI-powered application that scrapes job listings from online sources and uses **Large Language Models (LLMs)** to analyze, structure, and match job descriptions with candidate skills.
@@ -144,4 +144,5 @@ Focused on building real-world AI & LLM systems.
 
 ## License
 This project is for educational and demonstration purposes.
+
 
