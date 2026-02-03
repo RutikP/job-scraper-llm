@@ -90,10 +90,22 @@ python main.py
 ---
 
 ## Example Output
-- Extracted Skills: Python, SQL, Machine Learning  
-- Experience Level: 3–5 Years  
-- LLM Summary: Concise job description summary  
-- Match Score: Candidate vs Job relevance %
+ 
+Total jobs found: 3
+
+Processing job 1/3: Account Executive, Airbnb for Business
+Processing job 2/3: Acquisition Lead, Experiences, Mexico City (12 month contract)
+Processing job 3/3: Acquisition Manager, Experiences, Mexico City
+
+===== JOB MATCH RESULTS (RANKED) =====
+
+1. Account Executive, Airbnb for Business
+   Match Score   : 85
+   Is Match      : True
+   Experience Fit: Partial match
+   Matched Skills: ['Sales', 'CRM', 'Negotiation', 'Client Management']
+   Missing Skills: []
+   URL           : https://careers.airbnb.com/positions/7434393/
 
 ---
 
@@ -132,3 +144,4 @@ Focused on building real-world AI & LLM systems.
 
 ## License
 This project is for educational and demonstration purposes.
+
